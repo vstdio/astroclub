@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Регистрация</title>
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light mb-5">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Планета X</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav mr-auto">
+                        <a class="nav-item nav-link active" href="index.html">Главная <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="about.html">О сайте</a>
+                        <a class="nav-item nav-link" href="contact.html">Контакты</a>
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="login.html">Войти</a>
+                        <a class="nav-item nav-link" href="register.html#">Зарегистрироваться</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container container-max-width-540">
+        <form>
+            <h1 class="text-center h3 mb-3 font-weight-normal">Регистрация</h1>
+            <p>
+                <label for="loginInput" class="sr-only">Логин</label>
+                <input id="loginInput" class="form-control" type="text" placeholder="Логин" required autofocus/>
+            </p>
+            <p>
+                <label for="passwordInput" class="sr-only">Пароль</label>
+                <input id="passwordInput" class="form-control" type="password" placeholder="Пароль" required/>
+            </p>
+            <p>
+                <label for="repeatPasswordInput" class="sr-only">Повторите пароль</label>
+                <input id="repeatPasswordInput" class="form-control" type="password" placeholder="Повторите пароль" required/>
+            </p>
+            <button class="btn btn-lg btn-primary btn-block mb-3" type="submit">Зарегистрироваться</button>
+        </form>
+        <p class="text-center text-muted">© Планета X, 2018</p>
+    </div>
+    <script lang="javascript" src="js/lib/jquery-3.3.1.js"></script>
+    <script lang="javascript" src="js/lib/popper.min.js"></script>
+    <script lang="javascript" src="js/lib/bootstrap.min.js"></script>
+    <script lang="javascript" src="js/main.js"></script>
+</body>
+</html>
