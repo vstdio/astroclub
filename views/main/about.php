@@ -11,7 +11,7 @@
                     <h2 style="margin-bottom: 20px;" class="title">Статистика</h2>
                     <?php if (!empty($statistics)): ?>
                         <?php foreach ($statistics as $name => $count): ?>
-                            <p>Статей на тему <a class="important_link" href="/categories/<?php echo $name; ?>"}><i><?php echo mb_strtolower(Utils::TranslateCategoryName($name)); ?></i></a>: <?php echo $count; ?></p>
+                            <p>Статей на тему <i><?php echo $name; ?></i>: <?php echo $count; ?></p>
                         <?php endforeach; ?>
                     <?php else: ?>
                         <p>К сожалению, никто пока не оставил не одной статьи на сайте</p>
