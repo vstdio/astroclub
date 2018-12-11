@@ -1,24 +1,15 @@
 <?php
     class Utils
     {
-        /**
-         * @return string
-         * @throws Exception
-         */
-        public static function getUri()
+        public static function getRequestUri()
         {
-            $uri = $_SERVER['REQUEST_URI'];
-            if (!empty($uri))
-            {
-                return trim($uri, "/");
-            }
-            throw new Exception("uri is empty");
+            return trim($_SERVER['REQUEST_URI'], '/');
         }
 
         public static function prettyPrint($value)
         {
             echo "<pre>";
-            print_r($value);
+            echo print_r($value);
             echo "</pre>";
         }
     }
